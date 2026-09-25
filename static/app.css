@@ -518,6 +518,28 @@ button:hover, .btn:hover { background: var(--navy-2); }
   background: #fff;
 }
 
+.course-figs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem 1.2rem;
+  margin: 1rem 0 1.3rem;
+}
+
+.course-figs .course-fig {
+  margin: 0;
+}
+
+.course-figs .course-fig img {
+  width: 100%;
+}
+
+@media (min-width: 48rem) {
+  .course-figs {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
 .course-fig figcaption {
   color: var(--muted);
   font-size: 0.88rem;
